@@ -29,7 +29,8 @@ nav{
 
 /* Logo */
 .logo{
-    color: cyan;
+    color: rgb(32, 237, 237);
+    font-family: Arial,Arial, sans-serif;
 }
 
 /* Menu */
@@ -40,7 +41,12 @@ nav ul{
 
 /* Menu Items */
 nav ul li{
-    margin-left: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-style: ridge;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: aqua;
 }
 
 /* Menu Links */
@@ -67,7 +73,7 @@ nav ul li a:hover{
 /* Home Text */
 .home-text h1{
     font-size: 40px;
-    color: cyan;
+    color: rgb(58, 206, 239);
 }
 
 .home-text h3{
@@ -112,6 +118,9 @@ section h2{
 
 /* About */
 .about p{
+    box-sizing: border-box;
+    border-style: double;
+    border-color: #4d0707;
     text-align: center;
     line-height: 1.8;
 }
@@ -126,9 +135,10 @@ section h2{
 
 /* Skill Card */
 .skill{
-    background: #222;
+    background: #5205056a;
     padding: 20px 40px;
     border-radius: 10px;
+    border-style: groove;
     transition: 0.3s;
 }
 
@@ -145,18 +155,17 @@ section h2{
 
 /* Project Card */
 .project-card{
-    background: #222;
+    background: #4d0707;
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
+    border-style:inset;
     width: 70%;
 }
-
 /* Contact */
 .contact{
     text-align: center;
 }
-
 /* Responsive Design */
 @media(max-width: 768px){
 
