@@ -1,370 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ILLUSPARK - Artist Freelance Marketplace</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
+  <div class="container">
 
-<header>
-
-    <div class="logo">
-       😀ILLUSPARK!!
+    <div class="title-box">
+      <h1>TO-DO<br>LIST</h1>
     </div>
 
-    <nav>
-
-        <a href="#"><b>Home</a></b>
-        <a href="#"><b>Artists</a></b>
-        <a href="#"><b>Services</a></b>
-        <a href="#"><b>Projects</a></b>
-        <a href="#"><b>Pricing</a></b>
-        <a href="#"><b>Reviews</a></b>
-        <a href="#"><b>Contact</a></b>
-
-    </nav>
-
-    <button class="nav-btn">
-      <b>  Join Now!</b></button>
-
-</header>
-
-<!-- ================= HERO SECTION ================= -->
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>
-            Discover The Best <span>Creative Artists</span> Around The World
-        </h1>
-
-        <p>
-           <b> " ILLUSPARK " is a modern freelance marketplace platform where talented
-            designers, developers, animators, illustrators, video editors,
-            photographers and creative professionals connect with clients.</b>
-        </p>
-
-        <div class="hero-buttons">
-
-            <button class="explore-btn">
-                Explore Artists
-            </button>
-
-            <button class="hire-btn">
-                Hire Now
-            </button>
-
-        </div>
-
+    <div class="table-header">
+      <span>DUE DATE</span>
+      <span>PRIORITY</span>
+      <span>WHAT</span>
+      <span>WHO</span>
+      <span>IN PROGRESS</span>
+      <span>DONE</span>
     </div>
 
-    <div class="hero-image">
+    <div id="taskList">
 
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200" alt="">
+      <!-- Task 1 -->
+      <div class="task">
+        <div class="date">14/05</div>
 
-    </div>
-
-</section>
-
-<!-- ================= STATS ================= -->
-
-<section class="stats">
-
-    <div class="stat-box">
-        <h1>15K+</h1>
-        <p><b>Creative Artists</p></b>
-    </div>
-
-    <div class="stat-box">
-        <h1>50K+</h1>
-        <p><b>Projects Completed</p></b>
-    </div>
-
-    <div class="stat-box">
-        <h1>98%</h1>
-        <p><b>Client Satisfaction</p></b>
-    </div>
-
-    <div class="stat-box">
-        <h1>120+</h1>
-        <p><b>Countries Connected</p></b>
-    </div>
-
-</section>
-
-<!-- ================= FEATURES ================= -->
-
-<section class="features">
-
-    <h1 class="section-title">
-        <b>Why Choose ILLUSPARK?</b>
-    </h1>
-
-    <div class="feature-container">
-
-        <div class="feature-card">
-            <h2>🎨 Top Designers</h2>
-            <p>
-              <b>  Hire professional UI/UX designers and graphic artists
-                for premium projects.</b>
-            </p>
+        <div class="priority">
+          <span class="dot high"></span> HIGH
         </div>
 
-        <div class="feature-card">
-            <h2>⚡ Fast Delivery</h2>
-            <p>
-              <b>  Get high quality work delivered quickly and professionally.</b>
-            </p>
+        <div class="what">Complete Internship Project</div>
+
+        <div class="who">college</div>
+
+        <div class="check-box progress active"></div>
+
+        <div class="check-box done"></div>
+      </div>
+
+      <!-- Task 2 -->
+      <div class="task">
+        <div class="date">16/05</div>
+
+        <div class="priority">
+          <span class="dot medium"></span> MEDIUM
         </div>
 
-        <div class="feature-card">
-            <h2>💼 Freelance Jobs</h2>
-            <p>
-             <b>   Find thousands of freelance opportunities from global clients.</b>
-            </p>
+        <div class="what">Prepare Seminar PPT</div>
+
+        <div class="who">Department</div>
+
+        <div class="check-box progress"></div>
+
+        <div class="check-box done active"></div>
+      </div>
+
+      <!-- Task 3 -->
+      <div class="task">
+        <div class="date">8/19</div>
+
+        <div class="priority">
+          <span class="dot low"></span> LOW
         </div>
 
-        <div class="feature-card">
-            <h2>🔒 Secure Payments</h2>
-            <p>
-             <b>   Safe and secure payment system for both freelancers and clients.</b>
-            </p>
+        <div class="what">Study for Internal Exam</div>
+
+        <div class="who"> College library</div>
+
+        <div class="check-box progress active"></div>
+
+        <div class="check-box done"></div>
+      </div>
+
+      <!-- Task 4 -->
+      <div class="task">
+        <div class="date">9/10</div>
+
+        <div class="priority">
+          <span class="dot low"></span> LOW
         </div>
 
-        <div class="feature-card">
-            <h2>🚀 Trending Skills</h2>
-            <p>
-              <b>  Explore modern technologies and trending creative skills.</b>
-            </p>
+        <div class="what">Complete Record Work</div>
+
+        <div class="who">class</div>
+
+        <div class="check-box progress active"></div>
+
+        <div class="check-box done"></div>
+      </div>
+
+      <!-- Task 5 -->
+      <div class="task">
+        <div class="date">10/5</div>
+
+        <div class="priority">
+          <span class="dot low"></span> LOW
         </div>
 
-        <div class="feature-card">
-            <h2>🌍 Worldwide Community</h2>
-            <p>
-             <b>   Connect with artists and creative professionals globally.</b>
-            </p>
-        </div>
+        <div class="what">Attend Coding Workshop</div>
+
+        <div class="who">campus</div>
+
+        <div class="check-box progress active"></div>
+
+        <div class="check-box done"></div>
+      </div>
 
     </div>
 
-</section>
+    <div class="notes-section">
+      <h2>NOTES</h2>
 
-<!-- ================= SERVICES ================= -->
-
-<section class="services">
-
-    <h1 class="section-title">
-    <b>    Popular Services!</b>
-    </h1>
-
-    <div class="service-container">
-
-        <div class="service-card">
-
-            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200">
-
-            <h2>UI/UX Design</h2>
-
-            <p>
-               <b> Modern website and mobile app design services.</b>
-            </p>
-
-        </div>
-
-        <div class="service-card">
-
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200">
-
-            <h2>Web Development</h2>
-
-            <p>
-               <b> Responsive and modern websites using latest technologies.</b>
-            </p>
-
-        </div>
-
-        <div class="service-card">
-
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200">
-
-            <h2>3D Animation</h2>
-
-            <p>
-             <b>   Professional animation and visual effects for projects.</b>
-            </p>
-
-        </div>
-
+      <textarea placeholder="• Finish assignments before deadline
+• Practice HTML, CSS & JavaScript daily
+• Prepare for semester exams"></textarea>
     </div>
 
-</section>
+  </div>
 
-<!-- ================= PROJECTS ================= -->
-
-<section class="projects">
-
-    <h1 class="section-title">
-      <b>  Featured Projects!</b>
-    </h1>
-
-    <div class="project-container">
-
-        <div class="project-card">
-
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200">
-
-            <div class="project-content">
-
-                <h2>Modern Portfolio Website</h2>
-
-                <p>
-                 <b>   Creative responsive portfolio for professional designers.</b>
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200">
-
-            <div class="project-content">
-
-                <h2>Creative Agency Branding</h2>
-
-                <p>
-                  <b>  Premium branding project for startup company.</b>
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200">
-
-            <div class="project-content">
-
-                <h2>3D Product Animation</h2>
-
-                <p>
-                  <b>  Advanced animation and realistic rendering project.</b>
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= TESTIMONIALS ================= -->
-
-<section class="testimonials">
-
-    <h1 class="section-title">
-      <b>  Client Reviews!</b>
-    </h1>
-
-    <div class="testimonial-container">
-
-        <div class="testimonial-card">
-
-            <p>
-                “ILLUSPARK helped me hire amazing designers for my startup.”
-            </p>
-
-            <h3>- Daniel</h3>
-
-        </div>
-
-        <div class="testimonial-card">
-
-            <p>
-                “Best freelance marketplace for creative professionals.”
-            </p>
-
-            <h3>- Sophia</h3>
-
-        </div>
-
-        <div class="testimonial-card">
-
-            <p>
-                “Professional UI and excellent experience using this platform.”
-            </p>
-
-            <h3>- Michael</h3>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section class="contact">
-
-    <h1 class="section-title">
-      <b>  Contact Us!</b>
-    </h1>
-
-    <form>
-
-        <input type="text" placeholder="Your Name">
-
-        <input type="email" placeholder="Your Email">
-
-        <textarea rows="6" placeholder="Your Message"></textarea>
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <h1><b>ILLUSPARK!</h1></b>
-
-    <p>
-      <b> Modern Artist Freelance Marketplace Platform</b>
-    </p>
-
-    <div class="footer-links">
-
-        <a href="#"><b>Home</b></a>
-        <a href="#"><b>Services</b></a>
-        <a href="#"><b>Artists</b></a>
-        <a href="#"><b>Projects</b></a>
-        <a href="#"><b>Contact</b></a>
-
-    </div>
-
-    <p class="copyright">
-     <b> © 2026 ILLUSPARK. All Rights Reserved.</b>
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
