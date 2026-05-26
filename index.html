@@ -1,127 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
+<div class="calculator">
 
-    <div class="title-box">
-      <h1>TO-DO<br>LIST</h1>
-    </div>
+    <!-- DISPLAY -->
+    <div class="display" id="display">0</div>
 
-    <div class="table-header">
-      <span>DUE DATE</span>
-      <span>PRIORITY</span>
-      <span>WHAT</span>
-      <span>WHO</span>
-      <span>IN PROGRESS</span>
-      <span>DONE</span>
-    </div>
+    <!-- BUTTONS -->
+    <div class="buttons">
 
-    <div id="taskList">
+        <button class="top-btn" onclick="clearDisplay()">AC</button>
+        <button class="top-btn" onclick="deleteLast()">DEL</button>
+        <button class="top-btn" onclick="appendValue('%')">%</button>
+        <button class="operator" onclick="appendValue('/')">/</button>
 
-      <!-- Task 1 -->
-      <div class="task">
-        <div class="date">14/05</div>
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="operator" onclick="appendValue('*')">x</button>
 
-        <div class="priority">
-          <span class="dot high"></span> HIGH
-        </div>
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button class="operator" onclick="appendValue('-')">-</button>
 
-        <div class="what">Complete Internship Project</div>
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button class="operator" onclick="appendValue('+')">+</button>
 
-        <div class="who">college</div>
-
-        <div class="check-box progress active"></div>
-
-        <div class="check-box done"></div>
-      </div>
-
-      <!-- Task 2 -->
-      <div class="task">
-        <div class="date">16/05</div>
-
-        <div class="priority">
-          <span class="dot medium"></span> MEDIUM
-        </div>
-
-        <div class="what">Prepare Seminar PPT</div>
-
-        <div class="who">Department</div>
-
-        <div class="check-box progress"></div>
-
-        <div class="check-box done active"></div>
-      </div>
-
-      <!-- Task 3 -->
-      <div class="task">
-        <div class="date">8/19</div>
-
-        <div class="priority">
-          <span class="dot low"></span> LOW
-        </div>
-
-        <div class="what">Study for Internal Exam</div>
-
-        <div class="who"> College library</div>
-
-        <div class="check-box progress active"></div>
-
-        <div class="check-box done"></div>
-      </div>
-
-      <!-- Task 4 -->
-      <div class="task">
-        <div class="date">9/10</div>
-
-        <div class="priority">
-          <span class="dot low"></span> LOW
-        </div>
-
-        <div class="what">Complete Record Work</div>
-
-        <div class="who">class</div>
-
-        <div class="check-box progress active"></div>
-
-        <div class="check-box done"></div>
-      </div>
-
-      <!-- Task 5 -->
-      <div class="task">
-        <div class="date">10/5</div>
-
-        <div class="priority">
-          <span class="dot low"></span> LOW
-        </div>
-
-        <div class="what">Attend Coding Workshop</div>
-
-        <div class="who">campus</div>
-
-        <div class="check-box progress active"></div>
-
-        <div class="check-box done"></div>
-      </div>
+        <button class="zero" onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button class="operator" onclick="calculate()">=</button>
 
     </div>
 
-    <div class="notes-section">
-      <h2>NOTES</h2>
+</div>
 
-      <textarea placeholder="• Finish assignments before deadline
-• Practice HTML, CSS & JavaScript daily
-• Prepare for semester exams"></textarea>
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
