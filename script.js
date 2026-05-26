@@ -1,7 +1,47 @@
-const checkBoxes = document.querySelectorAll(".check-box");
+let display = document.getElementById("display");
 
-checkBoxes.forEach(box => {
-    box.addEventListener("click", () => {
-        box.classList.toggle("active");
-    });
-});
+let currentInput = "";
+
+function appendValue(value){
+
+    if(display.innerText === "0"){
+        currentInput = value;
+    }
+    else{
+        currentInput += value;
+    }
+
+    display.innerText = currentInput;
+}
+
+function clearDisplay(){
+
+    currentInput = "";
+    display.innerText = "0";
+}
+
+function deleteLast(){
+
+    currentInput = currentInput.slice(0,-1);
+
+    if(currentInput === ""){
+        display.innerText = "0";
+    }
+    else{
+        display.innerText = currentInput;
+    }
+}
+
+function calculate(){
+
+    try{
+
+        currentInput = eval(currentInput).toString();
+
+        display.innerText = currentInput;
+    }
+    catch{
+
+        display.innerText = "Error";
+    }
+}
