@@ -1,47 +1,44 @@
-let display = document.getElementById("display");
-
-let currentInput = "";
+const display = document.getElementById("display");
 
 function appendValue(value){
-
-    if(display.innerText === "0"){
-        currentInput = value;
-    }
-    else{
-        currentInput += value;
-    }
-
-    display.innerText = currentInput;
+  display.value += value;
 }
 
 function clearDisplay(){
-
-    currentInput = "";
-    display.innerText = "0";
+  display.value = "";
 }
 
 function deleteLast(){
-
-    currentInput = currentInput.slice(0,-1);
-
-    if(currentInput === ""){
-        display.innerText = "0";
-    }
-    else{
-        display.innerText = currentInput;
-    }
+  display.value = display.value.slice(0,-1);
 }
 
 function calculate(){
-
-    try{
-
-        currentInput = eval(currentInput).toString();
-
-        display.innerText = currentInput;
-    }
-    catch{
-
-        display.innerText = "Error";
-    }
+  try{
+    display.value = eval(display.value);
+  }
+  catch{
+    display.value = "Error";
+  }
 }
+
+// Keyboard Support
+
+document.addEventListener("keydown",(e)=>{
+
+  if(!isNaN(e.key) || ['+','-','*','/','.'].includes(e.key)){
+    appendValue(e.key);
+  }
+
+  if(e.key === "Enter"){
+    calculate();
+  }
+
+  if(e.key === "Backspace"){
+    deleteLast();
+  }
+
+  if(e.key === "Escape"){
+    clearDisplay();
+  }
+
+});
